@@ -70,7 +70,6 @@ export function deepMerge<T extends object | null | undefined, U extends object 
         return source as T & U;
       default:
         throw new Error(`Unknown merge array strategy: ${mergeArrays}`);
-
     }
   }
   if (isObject(target) && isObject(source)) {

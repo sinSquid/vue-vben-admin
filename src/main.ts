@@ -18,7 +18,7 @@ import { setupStore } from '@/store';
 
 import App from './App.vue';
 
-async function bootstrap() {
+(async function bootstrap() {
   const app = createApp(App);
 
   // Configure store
@@ -59,6 +59,4 @@ async function bootstrap() {
   // await router.isReady();
 
   app.mount('#app');
-}
-
-bootstrap();
+})();
