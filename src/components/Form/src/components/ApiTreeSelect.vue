@@ -10,7 +10,7 @@
 </template>
 
 <script lang="ts">
-  import { type Recordable } from '@vben/types';
+  import { type Recordable } from '@local-custom/types';
   import { type PropType, computed, defineComponent, watch, ref, onMounted, unref } from 'vue';
   import { TreeSelect } from 'ant-design-vue';
   import { isArray, isFunction } from '/@/utils/is';

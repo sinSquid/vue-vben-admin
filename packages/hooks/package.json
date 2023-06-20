@@ -1,5 +1,5 @@
 {
-  "name": "@vben/hooks",
+  "name": "@local-custom/hooks",
   "version": "1.0.0",
   "homepage": "https://github.com/vbenjs/vue-vben-admin",
   "bugs": {
@@ -33,6 +33,6 @@
     "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@vben/types": "workspace:*"
+    "@local-custom/types": "workspace:*"
   }
 }

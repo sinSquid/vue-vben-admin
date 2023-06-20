@@ -37,7 +37,7 @@
 
 <script lang="ts" setup>
   import { computed, PropType } from 'vue';
-  import { type Recordable } from '@vben/types';
+  import { type Recordable } from '@local-custom/types';
   import { type DropMenu } from './typing';
   import { Dropdown, Menu, Popconfirm } from 'ant-design-vue';
   import Icon from '@/components/Icon/Icon.vue';
