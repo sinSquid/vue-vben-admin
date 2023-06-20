@@ -1,5 +1,6 @@
-import type { Menu, MenuModule } from '/@/router/types';
 import type { RouteRecordNormalized } from 'vue-router';
+import { pathToRegexp } from 'path-to-regexp';
+import type { Menu, MenuModule } from '/@/router/types';
 
 import { useAppStoreWithOut } from '/@/store/modules/app';
 import { usePermissionStore } from '/@/store/modules/permission';
@@ -8,7 +9,6 @@ import { filter } from '/@/utils/helper/treeHelper';
 import { isUrl } from '/@/utils/is';
 import { router } from '/@/router';
 import { PermissionModeEnum } from '/@/enums/appEnum';
-import { pathToRegexp } from 'path-to-regexp';
 
 const modules: Record<string, { default: unknown }> = import.meta.globEager('./modules/**/*.ts');
 

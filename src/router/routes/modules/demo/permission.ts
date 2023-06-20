@@ -27,7 +27,7 @@ const permission: AppRouteModule = {
         {
           path: 'page',
           name: 'FrontPageAuth',
-          component: () => import('/@/views/demo/permission/front/index.vue'),
+          component: () => import('/@/views/demo/permission/front/index'),
           meta: {
             title: t('routes.demo.permission.frontPage'),
           },
