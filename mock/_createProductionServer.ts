@@ -1,3 +1,4 @@
+// @ts-ignore
 import { createProdMockServer } from 'vite-plugin-mock/client';
 
 // 问题描述
@@ -16,7 +17,9 @@ import { createProdMockServer } from 'vite-plugin-mock/client';
 //   return pre;
 // }, [] as any[]);
 
-const modules = import.meta.globEager('./**/*.ts');
+const modules: Record<string, { default: { [Symbol.iterator]() } }> = import.meta.globEager(
+  './**/*.ts',
+);
 
 const mockModules: any[] = [];
 Object.keys(modules).forEach((key) => {
